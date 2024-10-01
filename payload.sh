@@ -1,8 +1,10 @@
 #!/bin/bash
+echo "calling banner..."
+sleep 0.5
 
 cat logo.txt
-echo "| windows anti anit-virus PAYLOAD - CPScript |"
-sleep 2
+echo ""
+echo ""
 
 echo "Enter Port [Example: 4444]:"
 read port
