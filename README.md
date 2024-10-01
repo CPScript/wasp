@@ -1,4 +1,4 @@
-**Wasp** is a payload generator and deployment tool for "disableing windows security fetures for ease spread of malware". It uses Metasploit Framework to create and deploy payloads, and Apache server to host the payloads.
+**Wasp** is a payload generator and deployment tool for "disableing windows security fetures for easy spread of malware". It uses Metasploit Framework to create and deploy payloads, and Apache server to host the payloads.
 
 #### **Files**:
 * `requirements.txt`: a batch script that sets up the payload on the victim's machine.
